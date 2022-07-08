@@ -13,6 +13,7 @@
     table {
       width: 500px;
       border-collapse: collapse;
+      position: relative;      
     }
 
     td, th {
@@ -20,9 +21,30 @@
       padding: 5px;
     }
 
+    caption {
+      font-size: 0.8em;
+      font-weight: bold;
+      padding: 5px;
+      color: brown;
+    }
+
     thead, tfoot {
       background-color: gray;
       color: white;
+    }
+
+    thead > tr > th {
+      position: sticky;
+      top: -1;
+      background-color: #383838;
+    }
+
+    tbody > tr:nth-child(odd) { /* casas impares de uma tabela */ 
+      background-color: rgb(252, 210, 157);
+    }   
+
+    tbody > tr:nth-child(2n) {
+      background-color: antiquewhite;      
     }
 
     td.estado, th.estado {
@@ -37,6 +59,7 @@
 <body>
     <h1>Use de Tabelas Grandes</h1>
     <!-- ANATOMIA PARA TABELAS (GRANDES)
+        CAPTION
         TABLE
             THEAD
                 TR, TD, TH
@@ -45,12 +68,12 @@
             TFOOT
                 TR, TD, TH    
     -->
-
 <table>
+    <caption>População dos 5 principais estados brasileiros 2022</caption>
     <thead>
           <tr>
-              <th>Estado</th>
-              <th>População</th>              
+              <th scope="col">Estado</th>
+              <th scope="col" style="width: 70px;">População</th>              
           </tr>
     </thead>
     <tbody>
@@ -77,7 +100,7 @@
     </tbody>
     <tfoot>
           <tr>
-            <th class="estado">Total de Habitantes</th>
+            <th scope="row" class="estado">Total de Habitantes</th>
             <td class="num"><strong>101.310.890</strong></td>
           </tr>
     </tfoot>
