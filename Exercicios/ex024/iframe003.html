@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uso de Iframe</title>
+  <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      iframe#tela {
+        width: 90vw;
+        height: 400px;
+        border: 2px solid black;
+      }
+  </style>
+</head>
+<body>
+  <h1>Faça uma escolha</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae illum totam voluptatem porro cumque, reiciendis soluta aut accusamus beatae ex harum, earum voluptas! Provident incidunt quod, impedit qui nostrum sit.</p>
+
+  <ul>
+      <li><a href="pag001.html" target="frame">Primeira Página</a></li>
+      <li><a href="https://guia.codeblue.com.br/links.html" target="frame">Segunda Página</a></li>
+      <li><a href="pag002.html" target="frame">Terceira Página</a></li>
+  </ul>
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis accusantium veniam, expedita qui facere suscipit sunt optio quae odit repudiandae soluta, vel dolore repellendus! Suscipit reiciendis labore ratione recusandae fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fuga similique sit ipsa optio, aperiam recusandae laboriosam. Accusamus ratione repellat impedit dicta, quaerat cupiditate repudiandae minus distinctio! Aliquid, ad sed.</p>
+
+  <iframe srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora aspernatur vel, nostrum quae aliquam laudantium itaque. Minus dolore dolorum excepturi molestias odit nobis facilis dolores. Debitis maiores quibusdam esse non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsa qui nam a! Dignissimos debitis laudantium doloribus quo atque tempore, omnis corporis ipsam esse vitae magnam earum expedita nam facilis.</p>" id="tela" name="frame">
+    <p>Infelizmente seu navegador...</p>
+  </iframe>
+
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora aspernatur vel, nostrum quae aliquam laudantium itaque. Minus dolore dolorum excepturi molestias odit nobis facilis dolores. Debitis maiores quibusdam esse non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsa qui nam a! Dignissimos debitis laudantium doloribus quo atque tempore, omnis corporis ipsam esse vitae magnam earum expedita nam facilis.</p>
+
+</body>
+</html>
